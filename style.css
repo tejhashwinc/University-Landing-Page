@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #003366;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(#003366aa, #000000cc), url('https://source.unsplash.com/1600x900/?university-campus') center/cover no-repeat;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #e6b800;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #003366;
+}
+
+.section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section ul li {
+  background: #f0f6ff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.departments, .faculty, .testimonials {
+  background-color: #eaf3fa;
+}
+
+.testimonial-box {
+  max-width: 600px;
+  margin: 10px auto;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 30px 10px;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+}
